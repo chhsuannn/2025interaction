@@ -7,7 +7,7 @@ Serial myPort;
 color [] c = {#CEC2B9, #EFE5DA, #EDE1CA, #EFB37E, #EC8D54, #EF7F63, #F76543}; //色彩 2^1, 2^2...2^6
 color [] c2 = {#776E66, #776E66, #776E66, #FDF8F5, #FDF8F5, #FDF8F5, #FDF8F5}; //字色
 int [] N = {0, 2, 4, 8, 16, 32, 64}; //對應的數字
-int[][] B = {{0, 0, 0, 0}, {1, 2, 3, 4}, {5, 0, 0, 0}, {0, 0, 0, 0}}; //板子
+int[][] B = {{0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}}; //板子
 void keyPressed(){
   if(keyCode==LEFT) myPort.write('L');
   if(keyCode==RIGHT){ // 按「右」
@@ -73,4 +73,5 @@ void draw(){
     }
   }
 }
+
 
